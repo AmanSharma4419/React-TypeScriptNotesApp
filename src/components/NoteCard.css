@@ -34,3 +34,13 @@ ul {
     transform: rotate(10deg);
   }
 }
+
+/* Media queries */
+@media only screen and (max-width: 400px) {
+  section,
+  ul {
+    background: rgb(153, 143, 143);
+    width: 92vw;
+    margin: 0;
+  }
+}
