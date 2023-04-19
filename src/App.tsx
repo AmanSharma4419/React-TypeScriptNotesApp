@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Header />
       <NotesList notes={notes} setNotes={setNotes} />
-      <CreateNotesForm notes={notes} setNotes={setNotes} />
+      <CreateNotesForm {...{ notes, setNotes }} />
     </div>
   );
 }
