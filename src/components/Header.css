@@ -3,6 +3,9 @@ header {
   width: 100%;
   background: rgb(61, 139, 165);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   color: rgb(222, 214, 236);
