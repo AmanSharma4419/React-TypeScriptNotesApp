@@ -31,7 +31,7 @@ const NotesList: React.FunctionComponent<INotesProps> = ({
   };
   return (
     <>
-      <h2>My Notes</h2>
+      {notes.length !== 0 && <h2>My Notes</h2>}
       <div>{renderNoteList()}</div>
     </>
   );
