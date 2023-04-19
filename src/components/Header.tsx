@@ -1,4 +1,3 @@
-import React from "react";
 import "../components/Header.css";
 type Props = {};
 
