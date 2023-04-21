@@ -13,7 +13,7 @@ const CreateNotesForm: React.FunctionComponent<ICreateNotesFormProps> = ({
 }) => {
   const [title, setTitle] = useState<string>("");
   const [text, setText] = useState<string>("");
-  const [backgroundColor, setbackgroundColor] = useState<string>("");
+  const [backgroundColor, setbackgroundColor] = useState<string>("black");
   const [error, setError] = useState<string>("");
   const handleSubmitNotes = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -30,6 +30,8 @@ const CreateNotesForm: React.FunctionComponent<ICreateNotesFormProps> = ({
         date: new Date().toString(),
       },
     ]);
+    setTitle("");
+    setText("");
   };
   return (
     <>
@@ -49,6 +51,8 @@ const CreateNotesForm: React.FunctionComponent<ICreateNotesFormProps> = ({
             onChange={(e) => {
               setTitle(e.target.value);
             }}
+            data-testid="custom-element"
+            value={title}
           />
           <label htmlFor="Title">Text</label>
           <input
@@ -57,6 +61,7 @@ const CreateNotesForm: React.FunctionComponent<ICreateNotesFormProps> = ({
             onChange={(e) => {
               setText(e.target.value);
             }}
+            value={text}
           />
           <label htmlFor="Title">Background Color</label>
           <input
