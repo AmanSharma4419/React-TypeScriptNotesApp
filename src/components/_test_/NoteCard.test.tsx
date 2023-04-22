@@ -10,7 +10,6 @@ test("should render the note card", async () => {
     color: "rgb(197, 203, 206)",
     date: new Date().toString(),
   };
-
   render(<NoteCard note={note} handleDeleteNote={() => {}} />);
   const testingElement = screen.getByRole("button", { name: "Delete" });
   expect(testingElement).toBeInTheDocument();

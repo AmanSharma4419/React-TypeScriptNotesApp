@@ -1,6 +1,3 @@
-// Testing the input value for the title, text , color
-// On button subbmiting check feilds are cleared
-
 import { screen, render, fireEvent } from "@testing-library/react";
 import CreateNotesForm from "../CreateNotes";
 
