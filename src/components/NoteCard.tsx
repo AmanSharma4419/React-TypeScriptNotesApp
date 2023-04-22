@@ -1,6 +1,6 @@
-import * as React from "react";
-import { Notes } from "../models/interface";
-import "../components/NoteCard.css";
+import * as React from 'react';
+import { Notes } from '../models/interface';
+import '../components/NoteCard.css';
 interface INoteCardProps {
   note: Notes;
   handleDeleteNote: (id: any) => void;

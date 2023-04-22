@@ -1,12 +1,11 @@
-import "../components/Header.css";
-type Props = {};
+import '../components/Header.css';
 
-export default function Header({}: Props) {
-  return (
-    <>
-      <header>
-        <h1>React & Typescript Project</h1>
-      </header>
-    </>
-  );
+export default function Header() {
+	return (
+		<>
+			<header>
+				<h1>React & Typescript Project</h1>
+			</header>
+		</>
+	);
 }

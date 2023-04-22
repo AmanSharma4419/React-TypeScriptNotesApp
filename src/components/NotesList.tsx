@@ -1,7 +1,7 @@
-import * as React from "react";
-import "../components/NotesList.css";
-import { Notes } from "../models/interface";
-import NoteCard from "./NoteCard";
+import * as React from 'react';
+import '../components/NotesList.css';
+import { Notes } from '../models/interface';
+import NoteCard from './NoteCard';
 
 interface INotesProps {
   notes: Notes[];
